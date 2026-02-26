@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/templates/template-1/Navbar';
+import Hero from '../../components/templates/template-1/Hero';
+---
+
+<Layout title="Template 1: Infographic SaaS">
+	<Navbar client:load />
+	<main>
+		<Hero client:load />
+	</main>
+</Layout>
