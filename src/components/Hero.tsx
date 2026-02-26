@@ -30,6 +30,18 @@ export default function Hero() {
           
           {/* Left Side: Tightened Copy */}
           <div className="lg:col-span-7 flex flex-col space-y-6 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+            {/* Social Badge at the top */}
+            <div className="flex items-center justify-center lg:justify-start gap-3">
+              <div className="flex -space-x-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-sm font-semibold text-slate-900">
+                4.9/5 <span className="text-slate-500 font-normal underline decoration-indigo-500/30">Average Rating from 500+ Local Reviews</span>
+              </p>
+            </div>
+
             {/* The Formulaic Headline (H1): End Result + Time Period + Emotional Payoff */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
               Fix Your Plumbing Emergency <span className="text-indigo-600">in Under 60 Minutes</span> and Prevent Costly Water Damage.
@@ -81,7 +93,7 @@ export default function Hero() {
             {/* Form decorative background */}
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-b from-indigo-500 to-indigo-600 opacity-20 blur-lg"></div>
             
-            <div className="relative bg-white rounded-3xl shadow-2xl shadow-indigo-900/10 ring-1 ring-slate-100 overflow-hidden">
+            <div className="relative bg-white rounded-3xl shadow-2xl shadow-indigo-900/10 ring-1 ring-slate-100 overflow-hidden" id="signup">
               
               {/* Form Header */}
               <div className="bg-indigo-600 px-6 py-6 text-center">
