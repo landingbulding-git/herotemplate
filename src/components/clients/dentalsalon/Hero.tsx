@@ -14,10 +14,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center bg-[linear-gradient(135deg,_#efc0b6_0%,_#ffffff_40%,_#ffffff_100%)] overflow-hidden selection:bg-[#efc0b6]/30">
+    <section className="relative min-h-[100dvh] flex flex-col justify-center bg-white overflow-hidden selection:bg-[#efc0b6]/30">
       
-      {/* Additional subtle decor blob */}
-      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] rounded-full bg-[#efc0b6]/30 blur-[120px] -z-10"></div>
+      {/* Impressive Premium Background Gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#efc0b6]/50 via-white to-white -z-20"></div>
+      
+      {/* Decorative ambient light blobs for depth */}
+      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/3 w-[800px] h-[800px] rounded-full bg-[#6fbaba]/10 blur-[120px] -z-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/4 w-[600px] h-[600px] rounded-full bg-[#efc0b6]/30 blur-[100px] -z-10"></div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 sm:pt-24 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -37,9 +41,9 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* Headline - "Lowered" visually but kept tight for ATF */}
+            {/* Headline - Highlight color changed to match button */}
             <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-900 tracking-tight leading-[1.15]">
-              Tüntesd el a makacs nikotin- és kávéfoltokat maradéktalanul <span className="text-[#efc0b6] drop-shadow-sm brightness-75">mindössze 45 perc alatt</span>, és nézz tükörbe újra azzal a büszkeséggel!
+              Tüntesd el a makacs nikotin- és kávéfoltokat maradéktalanul <span className="text-[#6fbaba]">mindössze 45 perc alatt</span>, és nézz tükörbe újra azzal a büszkeséggel!
             </h1>
 
             {/* Sub-headline - Compact for fold tightness */}
