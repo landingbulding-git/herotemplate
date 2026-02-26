@@ -14,14 +14,17 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center bg-white overflow-hidden selection:bg-[#efc0b6]/30">
+    <section 
+      className="relative min-h-[100dvh] flex flex-col justify-center overflow-hidden selection:bg-[#6fbaba]/30"
+      style={{ 
+        background: '#6CB9B9',
+        backgroundImage: 'linear-gradient(90deg, rgba(108, 185, 185, 1) 0%, rgba(223, 232, 227, 1) 50%, rgba(245, 245, 245, 1) 100%)' 
+      }}
+    >
       
-      {/* Impressive Premium Background Gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#efc0b6]/50 via-white to-white -z-20"></div>
-      
-      {/* Decorative ambient light blobs for depth */}
-      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/3 w-[800px] h-[800px] rounded-full bg-[#6fbaba]/10 blur-[120px] -z-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
-      <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/4 w-[600px] h-[600px] rounded-full bg-[#efc0b6]/30 blur-[100px] -z-10"></div>
+      {/* Decorative ambient light blobs for depth - Adjusted to match new teal theme */}
+      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/3 w-[800px] h-[800px] rounded-full bg-white/20 blur-[120px] -z-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/4 w-[600px] h-[600px] rounded-full bg-[#6fbaba]/20 blur-[100px] -z-10"></div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 sm:pt-24 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -37,13 +40,13 @@ export default function Hero() {
                 ))}
               </div>
               <p className="text-xs sm:text-sm font-bold text-slate-900 tracking-tight">
-                4.9/5 <span className="text-slate-500 font-medium tracking-normal">csillagos értékelés több mint 500+ páciensünk alapján.</span>
+                4.9/5 <span className="text-slate-600 font-medium tracking-normal">csillagos értékelés több mint 500+ páciensünk alapján.</span>
               </p>
             </div>
 
-            {/* Headline - Highlight color changed to match button */}
+            {/* Headline - Highlight color changed to match button #6fbaba */}
             <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-900 tracking-tight leading-[1.15]">
-              Tüntesd el a makacs nikotin- és kávéfoltokat maradéktalanul <span className="text-[#6fbaba]">mindössze 45 perc alatt</span>, és nézz tükörbe újra azzal a büszkeséggel!
+              Tüntesd el a makacs nikotin- és kávéfoltokat maradéktalanul <span className="text-[#6fbaba] drop-shadow-sm">mindössze 45 perc alatt</span>, és nézz tükörbe újra azzal a büszkeséggel!
             </h1>
 
             {/* Sub-headline - Compact for fold tightness */}
@@ -75,7 +78,7 @@ export default function Hero() {
             </div>
 
             {/* Form Container - Height optimized for ATF */}
-            <div className="relative bg-white rounded-[2rem] shadow-2xl shadow-[#efc0b6]/50 ring-1 ring-white/50 overflow-hidden flex flex-col z-10" id="booking">
+            <div className="relative bg-white rounded-[2rem] shadow-2xl shadow-[#6fbaba]/20 ring-1 ring-white/50 overflow-hidden flex flex-col z-10" id="booking">
               
               {/* Macro Image Concept - Scaled down for fold tightness */}
               <div className="h-32 relative bg-slate-900 overflow-hidden border-b-[3px] border-[#6fbaba]">
